@@ -10,7 +10,7 @@ app.config(function($routeProvider,$locationProvider) {
        controller: 'View1Ctrl',
 })
     .when('view2',{
-       templateUrl: 'viev2.html',
+       templateUrl: 'view2.html',
        controller: 'View2Ctrl',
 
     })
