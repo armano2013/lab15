@@ -1,20 +1,22 @@
-app.config(function($routeProvider,$locationProvider) {
-    $routeProvider
-    .when("/", {
-        templateUrl : "index.html"
-    })
+var app = angular.module('myApp', ['ngRoute']);
 
+app.config(function($routeProvider, $locationProvider) {
+    $routeProvider
+    .when('/main',{
+       templateUrl: 'main/main.html',
+       controller: 'myCtrl',
+    })
     .when('/view1',{
-       templateUrl: 'view1.html',
-       controller: 'View1Ctrl',
-})
-    .when('view2',{
-       templateUrl: 'view2.html',
-       controller: 'View2Ctrl',
+       templateUrl: 'View1/view1.html',
+       controller: 'myCtrl',
+    })
+    .when('/view2',{
+       templateUrl: 'View2/view2.html',
+       controller: 'myCtrl',
 
     })
     .otherwise({
-    redirectTo: '/index.html'
+    redirectTo: '/view1'
 });
 
 $locationProvider.hashPrefix('');
