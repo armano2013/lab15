@@ -1,3 +1,4 @@
-<div ng-repeat="val in primeFlags()">
- {{val.id}}&mdash;{{val.flag==true? "is prime": "isn't prime"}}
+<div>
+   Enter Number: <input type="number" ng-model="number" />
+   <div>{{primeTest(number)}}</div>
 </div>
