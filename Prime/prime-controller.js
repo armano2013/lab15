@@ -4,7 +4,7 @@ app.controller('PrimeController', function($scope) {
     // fill with true
     for(var i = 0; i <= 1000; i++){
         primeList[i] = {
-            id: i, 
+            id: i,
             flag: true};
     }
     // set false
@@ -22,4 +22,28 @@ app.controller('PrimeController', function($scope) {
 
     };
 });
-     
+
+
+
+function test_prime(n)
+{
+
+  if (n===1)
+  {
+    return false;
+  }
+  else if(n === 2)
+  {
+    return true;
+  }else
+  {
+    for(var x = 2; x<n; x++)
+    {
+      if(n % x === 0)
+      {
+        return false;
+      }
+    }
+    return true;
+  }
+}
