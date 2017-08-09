@@ -1,16 +1,8 @@
-      <li ng-repeat="data in array">
-       <span ng-if="data % 15 !==0">{{data}}</span> 
-       <span ng-if="data % 15===0">FizzBuzz</span> 
-       <span ng-if="data % 3 ===0">Fizz</span>
-       <span ng-if="data % 5 ===0">Buzz</span>
-    </li> 
      
-
  <div>
-  Enter Number: <input type="number" ng-model="number" />
+    Enter Number: <input type="number" ng-model="number" />
+    <div>{{fizz(number)}}</div>
  </div>
-    <div ng-if="array">The Given number <b>{{number}}</b> is Fizz</div>
-    <div ng-if="array">The Given number <b>{{number}}</b> is Buzz</div>
-    <div ng-if="array">The Given number <b>{{number}}</b> is FizzBuzz</div>  -->
+    
 
    
