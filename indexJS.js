@@ -1,22 +1,29 @@
+
 var app = angular.module('myApp', ['ngRoute']);
 
 app.config(function($routeProvider, $locationProvider) {
     $routeProvider
-    .when('/main',{
+     .when('/main',{
        templateUrl: 'main/main.html',
-       controller: 'myCtrl',
+       controller: 'MainController',
     })
-    .when('/view1',{
-       templateUrl: 'View1/view1.html',
-       controller: 'myCtrl',
+
+    .when('/fizzbuzz',{
+       templateUrl: 'FizzBuzz/fizzbuzz.html',
+       controller: 'FizzBuzzController',
     })
-    .when('/view2',{
-       templateUrl: 'View2/view2.html',
-       controller: 'myCtrl',
+    .when('/palindrome',{
+       templateUrl: 'Palindrome/palindrome.html',
+       controller: 'PalindromeController',
+    })
+
+    .when('/prime',{
+       templateUrl: 'Prime/prime.html',
+       controller: 'PrimeController',
 
     })
     .otherwise({
-    redirectTo: '/view1'
+    redirectTo: '/fizzbuzz'
 });
 
 $locationProvider.hashPrefix('');

@@ -7,28 +7,26 @@
   </head>
   <body>
 
-    <div ng-app="myApp" ng-controller="myCtrl">
+    <div ng-app="myApp" ng-controller="MainController">
         <nav> 
-                <a href="#main">Main Page</a>
-                <a href="#view1">Waterfall</a>
-                <a href="#view2">Water Pic</a>
-               
-            </nav>
-            <ng-view></ng-view>    
+          <a href="#main">Main</a>
+          <a href="#fizzbuzz">FizzBuzz</a>
+          <a href="#palindrome">Palindrome</a> 
+          <a href="#prime">Prime Numbers</a> 
+
+       </nav>
+       <ng-view></ng-view>    
         
-
-
     </div>
-
-
-
 
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.6.5/angular-route.js"></script>
     <script src="indexJS.js"></script>
     <script src="main/main-controller.js"></script>
-    <!-- <script src="view1/fizzBuzz.js"></script> -->
-    <!-- <script src="view2/View2Ctrl.js"></script>  -->
+    <script src="FizzBuzz/fizzbuzz-controller.js"></script>
+    <script src="Palindrome/palindrome-controller.js"></script>
+    <script src="Factories/reddit.factory.js"></script>
+    <script src="Prime/prime-controller.js"></script>
 
   </body>
 </html>

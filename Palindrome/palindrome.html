@@ -1,0 +1,9 @@
+
+<p>A palindrome is a word, phrase, number or sequence of words
+ that reads the same backwards as forwards.</p>
+<h3>Check whether the given word is palindrome or not</h3>
+ <div>
+  Enter Word: <input type="text" ng-model="word" />
+ </div>
+    <div ng-if="palicheck(word)">The Given word <b>{{word}}</b> is palindrome</div>
+    <div ng-if="!palicheck(word)">The Given word <b>{{word}}</b> is not palindrome</div>
